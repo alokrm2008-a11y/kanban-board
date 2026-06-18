@@ -77,3 +77,61 @@ taskInput.addEventListener("keydown", e => {
 searchInput.addEventListener("keydown", e => {
     if(e.key === "Enter") searchBtn.click();
 });
+
+// Display All Tasks - Sahil
+function renderTasks(){
+
+    todo.innerHTML = "";
+    progress.innerHTML = "";
+    done.innerHTML = "";
+
+    tasks.forEach(task => {
+
+        const card = document.createElement("div");
+
+        card.className = "task";
+        card.draggable = true;
+        card.dataset.title = task.title.toLowerCase();
+
+        card.innerHTML = `
+            <h3>${task.title}</h3>
+            <div class="actions">
+                <span class="edit">Edit</span>
+                <span class="delete">Delete</span>
+            </div>
+        `;
+
+        // Edit Task
+        card.querySelector(".edit").onclick = () => {
+
+            taskInput.value = task.title;
+            editId = task.id;
+
+            taskModal.style.display = "flex";
+            taskInput.focus();
+        };
+
+        // Delete Task
+        card.querySelector(".delete").onclick = () => {
+
+            tasks = tasks.filter(t => t.id !== task.id);
+
+            localStorage.setItem(
+                "tasks",
+                JSON.stringify(tasks)
+            );
+
+            renderTasks();
+        };
+
+	// Drag Task
+        card.addEventListener("dragstart", e => {
+            e.dataTransfer.setData("id", task.id);
+        });
+
+        document
+            .getElementById(task.status)
+            .appendChild(card);
+    });
+	//Here
+}
