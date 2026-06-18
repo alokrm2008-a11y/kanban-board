@@ -1,1 +1,40 @@
 
+
+
+
+
+
+
+
+
+
+
+
+/* Abhishek */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 24px;
+    margin-bottom:24px;
+}
+
+/* Shared Card Design */
+
+header,
+.column{
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+    border-radius:16px;
+    box-shadow:0 8px 24px rgba(0,0,0,.1);
+}
+
+header h1{
+    font-size:1.8rem;
+}
+
+.header-buttons{
+    display:flex;
+    gap:12px;
+}
