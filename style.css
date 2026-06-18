@@ -143,3 +143,32 @@ button:hover{
 .task h3{
     font-size:15px;
 }
+
+/* Sahil - added task actions style */
+
+.actions{
+    display:flex;
+    justify-content:space-between;
+    margin-top:12px;
+}
+
+.edit,
+.delete{
+    cursor:pointer;
+    font-weight:600;
+}
+
+.edit{
+    color:#4F46E5;
+}
+
+.delete{
+    color:#EF4444;
+}
+
+/* Search Highlight */
+
+.highlight{
+    border:2px solid #F59E0B;
+    background:#FFF8E8;
+}
