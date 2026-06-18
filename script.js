@@ -8,7 +8,9 @@ const filterModal = document.getElementById("filterModal");
 const taskInput = document.getElementById("taskInput");
 const searchInput = document.getElementById("searchInput");
 
-
+// Load tasks from local storage - Bhagya
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+let editId = null;
 
 
 // Open Add Task Modal -
