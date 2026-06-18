@@ -133,5 +133,13 @@ function renderTasks(){
             .getElementById(task.status)
             .appendChild(card);
     });
-	//Here
+// Update Task Counts - Uttkarsh
+    todoCount.textContent =
+        tasks.filter(t => t.status === "todo").length;
+
+    progressCount.textContent =
+        tasks.filter(t => t.status === "progress").length;
+
+    doneCount.textContent =
+        tasks.filter(t => t.status === "done").length;
 }
