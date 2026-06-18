@@ -38,3 +38,37 @@ header h1{
     display:flex;
     gap:12px;
 }
+
+/* Disha*/
+
+button{
+    border:none;
+    padding:11px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    transition:.25s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+#addBtn,
+#saveBtn,
+#searchBtn{
+    background:#4F46E5;
+    color:#fff;
+}
+
+#filterBtn{
+    background:#F59E0B;
+    color:#fff;
+}
+
+#cancelBtn,
+#closeFilterBtn{
+    background:#E5E7EB;
+    color:#374151;
+}
