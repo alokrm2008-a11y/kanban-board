@@ -69,3 +69,7 @@ saveBtn.onclick = () => {
 closeFilterBtn.onclick = () => {
     filterModal.style.display = "none";
 };
+// Add Task on Enter Key - Disha */
+taskInput.addEventListener("keydown", e => {
+    if(e.key === "Enter") saveBtn.click();
+});
