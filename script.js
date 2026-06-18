@@ -188,3 +188,6 @@ searchBtn.onclick = () => {
 
     filterModal.style.display = "none";
 };
+
+// Initial Render - Sahil
+renderTasks();
