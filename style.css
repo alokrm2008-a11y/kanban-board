@@ -116,3 +116,30 @@ button:hover{
     font-size:13px;
     font-weight:700;
 }
+
+/* Sahil - task area style  */
+
+.task-list{
+    padding:16px;
+    min-height:500px;
+}
+
+.task{
+    background:#fff;
+    border:1px solid #E5E7EB;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:14px;
+    cursor:grab;
+    transition:.25s;
+}
+
+.task:hover{
+    transform:translateY(-3px);
+    border-color:#C7D2FE;
+    box-shadow:0 8px 18px rgba(79,70,229,.12);
+}
+
+.task h3{
+    font-size:15px;
+}
