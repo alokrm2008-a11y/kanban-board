@@ -22,3 +22,16 @@ filterBtn.onclick = () => {
     filterModal.style.display = "flex";
     searchInput.focus();
 };
+
+
+
+cancelBtn.onclick = () => {
+    taskModal.style.display = "none";
+    taskInput.value = "";
+    editId = null;
+};
+
+// Close Search Modal
+closeFilterBtn.onclick = () => {
+    filterModal.style.display = "none";
+};
