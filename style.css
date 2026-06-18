@@ -172,3 +172,39 @@ button:hover{
     border:2px solid #F59E0B;
     background:#FFF8E8;
 }
+
+/* Uttkarsh ---- Modal styles  ---*/
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    width:320px;
+    padding:24px;
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.modal-content h2{
+    margin-bottom:10px;
+}
+
+.modal-content input{
+    width:100%;
+    padding:12px;
+    margin:15px 0;
+    border:1px solid #D1D5DB;
+    border-radius:10px;
+    outline:none;
+}
+
+.modal-content input:focus{
+    border-color:#4F46E5;
+}
