@@ -208,3 +208,35 @@ button:hover{
 .modal-content input:focus{
     border-color:#4F46E5;
 }
+
+
+/* Responsive Design Alok */
+
+@media (max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .board,
+    header{
+        flex-direction:column;
+    }
+
+    header{
+        gap:12px;
+        text-align:center;
+    }
+
+    .header-buttons{
+        width:100%;
+    }
+
+    .header-buttons button{
+        flex:1;
+    }
+
+    .task-list{
+        min-height:250px;
+    }
+}
