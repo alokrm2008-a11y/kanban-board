@@ -208,6 +208,15 @@ button:hover{
 .modal-content input:focus{
     border-color:#4F46E5;
 }
+/* Disha Add button styles */
+.buttons{
+    display:flex;
+    gap:10px;
+}
+
+.buttons button{
+    flex:1;
+}
 
 
 /* Responsive Design Alok */
