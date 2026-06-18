@@ -69,3 +69,7 @@ saveBtn.onclick = () => {
 closeFilterBtn.onclick = () => {
     filterModal.style.display = "none";
 };
+// Search Task on Enter Key - Disha*/
+searchInput.addEventListener("keydown", e => {
+    if(e.key === "Enter") searchBtn.click();
+});
