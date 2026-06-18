@@ -143,3 +143,29 @@ function renderTasks(){
     doneCount.textContent =
         tasks.filter(t => t.status === "done").length;
 }
+// Drag and Drop Functionality - Disha*/
+document.querySelectorAll(".task-list")
+.forEach(column => {
+
+    column.addEventListener("dragover", e =>
+        e.preventDefault()
+    );
+
+    column.addEventListener("drop", e => {
+
+        e.preventDefault();
+
+        const id =
+            e.dataTransfer.getData("id");
+
+        tasks.find(t => t.id === id)
+            .status = column.id;
+
+        localStorage.setItem(
+            "tasks",
+            JSON.stringify(tasks)
+        );
+
+        renderTasks();
+    });
+});
