@@ -1,0 +1,101 @@
+    <!-- Alok -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Kanban Task Board</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Kanban Task Board</h1>
+
+        <!-- Action Buttons -->
+        <div class="header-buttons">
+            <button id="addBtn">+ Add Task</button>
+            <button id="filterBtn">🔍 Filter</button>
+        </div>
+    </header>
+
+    <!-- Main Board -->
+    <div class="board">
+
+        <!-- To Do Column -->
+        <div class="column">
+            <div class="column-header todo">
+                <h2>To Do <span id="todoCount">0</span></h2>
+            </div>
+            <div class="task-list" id="todo"></div>
+        </div>
+
+        <!-- In Progress Column -->
+        <div class="column">
+            <div class="column-header progress">
+                <h2>In Progress <span id="progressCount">0</span></h2>
+            </div>
+            <div class="task-list" id="progress"></div>
+        </div>
+
+        <!-- Done Column -->
+        <div class="column">
+            <div class="column-header done">
+                <h2>Done <span id="doneCount">0</span></h2>
+            </div>
+            <div class="task-list" id="done"></div>
+        </div>
+
+    </div>
+
+    <!-- Add/Edit Task Modal -->
+    <div class="modal" id="taskModal">
+        <div class="modal-content">
+
+            <h2>Task Name</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter task name"
+            >
+
+            <div class="buttons">
+                <button id="saveBtn">Save</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Search Task Modal -->
+    <div class="modal" id="filterModal">
+        <div class="modal-content">
+
+            <h2>Search Task</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter task name"
+            >
+
+            <div class="buttons">
+                <button id="searchBtn">Search</button>
+                <button id="closeFilterBtn">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
