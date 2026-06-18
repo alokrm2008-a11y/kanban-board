@@ -169,3 +169,22 @@ document.querySelectorAll(".task-list")
         renderTasks();
     });
 });
+
+// Search Task - Sahil
+searchBtn.onclick = () => {
+
+    const text =
+        searchInput.value.toLowerCase();
+
+    document.querySelectorAll(".task")
+    .forEach(task => {
+
+        task.classList.remove("highlight");
+
+        if(task.dataset.title.includes(text)){
+            task.classList.add("highlight");
+        }
+    });
+
+    filterModal.style.display = "none";
+};
