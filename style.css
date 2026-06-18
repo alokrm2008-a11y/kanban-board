@@ -1,3 +1,12 @@
+/* Bhagya*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
+}
+
 
 
 
@@ -207,15 +216,6 @@ button:hover{
 
 .modal-content input:focus{
     border-color:#4F46E5;
-}
-/* Disha Add button styles */
-.buttons{
-    display:flex;
-    gap:10px;
-}
-
-.buttons button{
-    flex:1;
 }
 
 
