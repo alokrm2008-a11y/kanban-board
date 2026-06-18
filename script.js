@@ -33,6 +33,38 @@ cancelBtn.onclick = () => {
     editId = null;
 };
 
+// Save New Task or Update Existing Task - Uttkarsh
+saveBtn.onclick = () => {
+
+    const title = taskInput.value.trim();
+
+    if(!title){
+        alert("Enter task name");
+        return;
+    }
+
+    if(editId){
+
+        tasks.find(t => t.id === editId).title = title;
+        editId = null;
+
+    }else{
+
+        tasks.push({
+            id: Date.now().toString(),
+            title,
+            status:"todo"
+        });
+    }
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+
+    taskInput.value = "";
+    taskModal.style.display = "none";
+
+    renderTasks();
+};
+
 // Close Search Modal
 closeFilterBtn.onclick = () => {
     filterModal.style.display = "none";
