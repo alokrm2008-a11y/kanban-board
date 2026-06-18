@@ -79,6 +79,14 @@ button:hover{
     color:#374151;
 }
 
+/* Bhagya */
+
+.board{
+    display:flex;
+    gap:20px;
+    min-height:75vh;
+}
+
 /* Uttkarsh */
 
 .column{
