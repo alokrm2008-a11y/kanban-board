@@ -7,13 +7,14 @@
     font-family:'Segoe UI', Arial, sans-serif;
 }
 
+/* Page Background */
 
-
-
-
-
-
-
+body{
+    min-height:100vh;
+    padding:24px;
+    background:#334155;
+    color:#1F2937;
+}
 
 
 
@@ -80,14 +81,6 @@ button:hover{
 #closeFilterBtn{
     background:#E5E7EB;
     color:#374151;
-}
-
-/* Bhagya */
-
-.board{
-    display:flex;
-    gap:20px;
-    min-height:75vh;
 }
 
 /* Uttkarsh */
