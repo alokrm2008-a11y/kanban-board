@@ -223,6 +223,16 @@ button:hover{
     border-color:#4F46E5;
 }
 
+/* disha */
+.buttons{
+    display:flex;
+    gap:10px;
+}
+
+.buttons button{
+    flex:1;
+}
+
 
 /* Responsive Design Alok */
 
