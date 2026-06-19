@@ -33,6 +33,11 @@ cancelBtn.onclick = () => {
     editId = null;
 };
 
+// Close Search Modal
+closeFilterBtn.onclick = () => {
+    filterModal.style.display = "none";
+};
+
 // Save New Task or Update Existing Task - Uttkarsh
 saveBtn.onclick = () => {
 
@@ -65,10 +70,7 @@ saveBtn.onclick = () => {
     renderTasks();
 };
 
-// Close Search Modal
-closeFilterBtn.onclick = () => {
-    filterModal.style.display = "none";
-};
+
 // Add Task on Enter Key - Disha
 taskInput.addEventListener("keydown", e => {
     if(e.key === "Enter") saveBtn.click();
